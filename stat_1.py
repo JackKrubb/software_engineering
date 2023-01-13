@@ -2,6 +2,9 @@ import statistics
 import sys
 
 def main():
+    if len(sys.argv) < 2:
+        print("Give me a file name")
+        return
     filename = sys.argv[1]
     try:
         file = open(filename, 'r')
